@@ -25,3 +25,14 @@ img{
     opacity: 0;
     transform: skewY(1deg);
 }
+
+figure{
+    position: relative;
+    width: var(--fig-width);
+    height: var(--fig-height);
+    transition: transform 600ms var(--acc-back);
+}
+  
+figure:hover{
+    transform: scale(1.05) skewY(-1deg);
+}
