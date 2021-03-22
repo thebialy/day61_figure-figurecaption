@@ -61,3 +61,52 @@ figure:hover figcaption{
       opacity: 1;    
     }
 }
+
+figcaption span{
+    position: absolute;
+    display: block;
+    background: var(--grad-bright);
+    -webkit-text-fill-color: transparent;
+    font-family: var(--font-sans-serif);
+    transform: skewY(-13deg);
+    text-shadow: var(--box-shadow);
+    animation: popIn 600ms var(--acc-back) 1 forwards;
+    opacity: 0;
+  }
+  
+  @keyframes popIn{
+    0%,13%{
+      transform: scaleX(.89) scaleY(.75);
+      opacity: 0;
+    }
+    100%{
+      transform: skewY(-13deg);
+      opacity: 1;    
+    }
+  }
+  
+  figcaption span:nth-of-type(1){
+    top: -44px; left: 44px;
+    font-size: 21px;
+    animation-delay: calc(var(--delay-base) + 1 * var(--delay-added));
+  }
+  
+  figcaption span:nth-of-type(2){
+    top: -34px; left: -21px;
+    font-size: 89px;
+    font-family: var(--font-display);
+    animation-delay: calc(var(--delay-base) + 2 * var(--delay-added));
+  }
+  
+  figcaption span:nth-of-type(3){
+    bottom: -38px; right: -21px;
+    font-size: 89px;
+    font-family: var(--font-display);
+    animation-delay: calc(var(--delay-base) + 3 * var(--delay-added));
+  }
+  
+  figcaption span:nth-of-type(4){
+    bottom: -50px; right: -21px;
+    font-size: 21px;
+    animation-delay: calc(var(--delay-base) + 4 * var(--delay-added)); 
+  }
