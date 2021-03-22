@@ -20,7 +20,7 @@ img{
     height: auto;
     border-radius: 2px 34px;
     box-shadow: var(--box-shadow);
-    animation: popInImg 700ms var(--acc-back) 1 forwards;
+    animation: ImgPop 700ms var(--acc-back) 1 forwards;
     animation-delay: var(--delay-base);
     opacity: 0;
     transform: skewY(1deg);
@@ -50,4 +50,14 @@ figcaption {
 figure:hover figcaption{
     opacity: 0;
     transform: scale(.91);
+}
+
+@keyframes ImgPop{
+    0%{
+      transform: skewY(5deg) scaleX(.89) scaleY(.89);
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;    
+    }
 }
