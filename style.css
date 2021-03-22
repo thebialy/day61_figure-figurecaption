@@ -13,4 +13,15 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-  }
+}
+
+img{
+    width: 100%;
+    height: auto;
+    border-radius: 2px 34px;
+    box-shadow: var(--box-shadow);
+    animation: popInImg 700ms var(--acc-back) 1 forwards;
+    animation-delay: var(--delay-base);
+    opacity: 0;
+    transform: skewY(1deg);
+}
