@@ -5,7 +5,7 @@
   --font-sans-serif: 'Lato';
   --box-shadow: 0px 21px 32px 0px rgba(8, 40, 34, 1);
   --bg: url(https://i.pinimg.com/originals/bf/e5/cf/bfe5cf7b4197a6b5bdd27c0961a09d9f.jpg);
-  --grad-bright: linear-gradient(-55deg, #8fc2c9 0%, #bee0e5 100%);
+  --grad: linear-gradient(-55deg, #8fc2c9 0%, #bee0e5 100%);
   --figure-width: 380px;
   --figure-height: 255px;
   --delay-base: 500ms;
@@ -80,7 +80,7 @@ figure:hover figcaption{
 figcaption span{
     position: absolute;
     display: block;
-    background: var(--grad-bright);
+    background: var(--grad);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: var(--font-sans-serif);
