@@ -88,7 +88,7 @@ figcaption span{
     text-shadow: var(--box-shadow);
     animation: popIn 600ms var(--acc-back) 1 forwards;
     opacity: 0;
-  }
+}
   
   @keyframes popIn{
     0%, 13%{
