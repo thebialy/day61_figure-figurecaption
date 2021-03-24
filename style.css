@@ -119,10 +119,10 @@ figcaption span{
     font-size: 89px;
     font-family: var(--font-display);
     animation-delay: calc(var(--delay-base) + 3 * var(--delay-added));
-  }
+}
   
   figcaption span:nth-of-type(4){
     bottom: -50px; right: -21px;
     font-size: 21px;
     animation-delay: calc(var(--delay-base) + 4 * var(--delay-added)); 
-  }
+}
