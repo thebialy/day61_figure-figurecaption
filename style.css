@@ -91,7 +91,7 @@ figcaption span{
   }
   
   @keyframes popIn{
-    0%,13%{
+    0%, 13%{
       transform: scaleX(.89) scaleY(.75);
       opacity: 0;
     }
@@ -112,7 +112,7 @@ figcaption span{
     font-size: 89px;
     font-family: var(--font-display);
     animation-delay: calc(var(--delay-base) + 2 * var(--delay-added));
-  }
+}
   
   figcaption span:nth-of-type(3){
     bottom: -38px; right: -21px;
